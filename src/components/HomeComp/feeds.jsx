@@ -7,7 +7,7 @@ const Card = ({ user, post }) => {
 
   return (
     
-      <div className="bg-gray-800 text-white p-4 rounded-lg mb-6 w-[45vw]">
+      <div className="bg-gray-800 text-white p-4 rounded-lg mb-6 min-w-[800px] max-w-[45vw]">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center">
             <img

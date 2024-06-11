@@ -90,7 +90,7 @@ const Stories = () => {
 
   return (
     <div className="flex justify-center">
-      <div className="w-[45vw] text-white p-6 rounded-lg">
+      <div className="min-w-[800px] max-w-[45vw] text-white p-6 rounded-lg">
         <h2 className="text-2xl mb-4">Stories</h2>
         <div className="flex space-x-4">
           <div className="flex flex-col items-center">

@@ -4,7 +4,7 @@ const SearchBar = () => {
   return (
     <div className="flex justify-center">
       
-        <div className="mt-5 w-[45vw] bg-[rgb(53,46,59)] h-[6vh] flex rounded-lg">
+        <div className="mt-5 min-w-[800px] max-w-[45vw] bg-[rgb(53,46,59)] h-[6vh] flex rounded-lg">
           <div className="w-[5vw] h-[6vh] flex justify-center items-center">
 
           <svg

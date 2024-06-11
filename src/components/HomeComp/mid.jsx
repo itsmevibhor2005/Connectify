@@ -6,7 +6,7 @@ import React from 'react'
 
 const Mid = () => {
   return (
-    <div className="w-[50vw]">
+    <div className="min-w-[800px] max-w-[50vw]">
       <div className='bg-slate-950 h-screen'>
         
         <SearchBar/>
