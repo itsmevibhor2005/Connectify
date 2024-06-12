@@ -1,9 +1,13 @@
 html,body {
-  display: flex;
-  margin: 0;
   font-family: Arial, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  background: radial-gradient(circle at 50% -50%, rgb(107, 39, 217) 0%, rgb(2, 6, 23) 58%);
+  background-size: cover;
   background-repeat: no-repeat;
-  background: radial-gradient(circle at 50% -50%, rgb(107, 39, 217) 0%, rgb(2, 6, 23) 58%); 
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: 10px;
 }
 
 .outer-container {
@@ -45,9 +49,6 @@ html,body {
   }
   .form-container {
       order: 2;
-  }
-  body {
-    padding-bottom: 2000px;
   }
 }
 
