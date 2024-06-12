@@ -13,7 +13,6 @@ const Login = () => {
     if (type === "password"){
       setEye(eyeOpen);
       setType("text");
-      setA(false);
     }
     else{
       setEye(eyeClose);
