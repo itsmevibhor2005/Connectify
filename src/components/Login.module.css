@@ -10,7 +10,7 @@ html,body {
   padding-top: 10px;
 }
 
-.outer-container {
+.outeContainer {
   color: transparent;
   display: flex;
   flex-wrap: wrap;
@@ -20,19 +20,19 @@ html,body {
   left:0px;
 }
 
-.left-text, .form-container {
+.leftText, .formContainer {
   flex: 1;
   padding: 20px;
 }
 
-.left-text {
+.leftText {
   background-color: transparent;
   color: #ecede6;
   font-size: 100px;
   order: 1;
 }
 
-.form-container {
+.formContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,13 +41,13 @@ html,body {
 }
 
 @media (max-width: 1475px) {
-  .left-text, .form-container {
+  .leftText, .formContainer {
       flex: 0 0 100%;
   }
-  .left-text {
+  .leftText {
       order: 1;
   }
-  .form-container {
+  .formContainer {
       order: 2;
   }
 }
@@ -58,7 +58,7 @@ html,body {
   backdrop-filter: blur(0px);
   border-radius: 24px;
   background-color: rgba(117, 117, 117, 0.18);
-  padding: 10px 80px 50px 80px;
+  padding: 10px 80px 150px 80px;
 }
 
 .header {
@@ -71,31 +71,12 @@ html,body {
 
 }
 
-#input-fname, #input-lname {
-  display: inline ;
-}
-
-#span1, #span2{
-  position: absolute;
-  top: 260px;
-}
-
-#span2 {
-  right: 354px;
-}
-
-#input-lname {
-  position: fixed;
-  margin-top: 289px;
-  margin-left: 434px;
-}
-
 .field{
   display: flex;
   flex-direction: column;
   text-align: start ;
   padding:0;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .field span{
@@ -127,17 +108,17 @@ html,body {
   transition: ease border 0.1s;
 }
 
-#password-eye {
+#passwordEye {
   position:absolute;
   right: 90px;
-  top: 579px;
+  top: 519px;
   border-radius: 50px;
   background-color: transparent;
   cursor: pointer;
 }
 
-#password-eye:hover {
-  top: 577px;
+#passwordEye:hover {
+  top: 517px;
   right: 88px;
   height:54px;
   width: 54px;
@@ -145,7 +126,16 @@ html,body {
   transition: all 0.2s;
 }
 
-.div-btn-signup {
+.divForgotPassword{
+  padding-left: 0.3%;
+  font-size: 20px;
+}
+
+.divForgotPassword a{
+  color: #b1bb27;
+}
+
+.divBtnLogin {
   text-align: center;
   align-items: center;
   margin-top: 100px;
@@ -153,8 +143,8 @@ html,body {
   font-size: 20px;
 }
 
-.btn-signup {
-  margin-top: 0px;
+.btnLogin {
+  margin-top: 20px;
   background-color: rgb(217, 229, 43);
   box-shadow: 10px 0px 30px rgb(36, 15, 48);
   width: 98%;
@@ -167,21 +157,24 @@ html,body {
   font-size: 25px;
 }
 
-.btn-signup:hover {
+.btnLogin:hover {
   width: 100%;
   transition: all 0.15s ease;
 }
 
-.btn-signup:focus {
+.btnLogin:focus {
   color: white;
   background-color: rgba(176, 110, 251, 0.593);
   outline: none;
 }
 
-.sign-up-link {
+ p{
+  color:white
+}
+.signUpLink {
   color : #b1bb27;
 }
 
-.sign-up-link:hover {
+.signUpLink:hover {
   color : #b1bb27;
 }

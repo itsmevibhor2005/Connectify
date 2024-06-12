@@ -1,8 +1,9 @@
 import React from 'react'
-import './Login.css'
+import styles from './Login.module.css'
 import { useState } from 'react'
 import eyeClose from '../assets/eye-close.svg'
 import eyeOpen from '../assets/eye-open.svg'
+import { Link } from 'react-router-dom'
 
 
 const Login = () => {
@@ -22,31 +23,33 @@ const Login = () => {
 
   return (
     <>
-    <div className='outer-container'>
-      <div className="left-text">
+    <div className={styles.outeContainer}>
+      <div className={styles.leftText}>
         Add text and features here
       </div>
-      <div className="form-container">
-        <form className="form">
-          <div className="header">
+      <div className={styles.formContainer}>
+        <form className={styles.form}>
+          <div className={styles.header}>
             Login
           </div>
-          <div className="field">
+          <div className={styles.field}>
             <span>Email</span>
             <input type="email" placeholder='Email' size='40' required/>
           </div>
-          <div className="field">
+          <div className={styles.field}>
             <span>Password</span>
             <input type={type} placeholder="Password" size='60' required/>
-            <img src={eye} alt='' width="50px" height="50px" id="password-eye" onClick={(event)=> eyeClicked()}/>
+            <img src={eye} alt='' width="50px" height="50px" id={styles.passwordEye} onClick={(event)=> eyeClicked()}/>
           </div>
-          <div className='div-forgot-password'>
+          <div className={styles.divForgotPassword}>
             <a href="#">Forgot password?</a>
           </div>
-          <div className="div-btn-login">
-            <button className='btn-login'>Login</button>
+          <div className={styles.divBtnLogin}>
+            <Link to='/home'>
+            <button className={styles.btnLogin}>Login</button>
+            </Link>
             <p>Don't have an Account?</p>
-            <a className='sign-up-link' href="#">Sign Up</a>
+            <Link className={styles.signUpLink} to='/signup'>Sign Up</Link>
           </div>
         </form>
       </div>
