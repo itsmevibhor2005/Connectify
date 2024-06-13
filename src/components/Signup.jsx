@@ -4,6 +4,9 @@ import { useState } from 'react'
 import eyeClose from '../assets/eye-close.svg'
 import eyeOpen from '../assets/eye-open.svg'
 import { Link } from "react-router-dom";
+import { ChakraProvider } from '@chakra-ui/react';
+import login_signup_theme from './login_signup_theme';
+
 
 
 const Signup = () => {
@@ -35,7 +38,7 @@ const Signup = () => {
   };
 
   return (
-    <>
+    <ChakraProvider theme={login_signup_theme}>
     <div className={styles.outerContainer}>
       <div className={styles.leftText}>
         Add text and features here
@@ -79,8 +82,10 @@ const Signup = () => {
         </form>
       </div>
     </div>
-    </>
+    </ChakraProvider>
   );
 };
 
 export default Signup
+
+       
