@@ -1,16 +1,5 @@
-html,body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  box-sizing: border-box;
-  background: radial-gradient(circle at 50% -50%, rgb(107, 39, 217) 0%, rgb(2, 6, 23) 58%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  padding-top: 10px;
-}
-
-.outer-container {
+  
+.outerContainer {
   color: transparent;
   display: flex;
   flex-wrap: wrap;
@@ -20,19 +9,19 @@ html,body {
   left:0px;
 }
 
-.left-text, .form-container {
+.leftText, .formContainer {
   flex: 1;
   padding: 20px;
 }
 
-.left-text {
+.leftText {
   background-color: transparent;
   color: #ecede6;
   font-size: 100px;
   order: 1;
 }
 
-.form-container {
+.formContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,13 +30,13 @@ html,body {
 }
 
 @media (max-width: 1475px) {
-  .left-text, .form-container {
+  .leftText, .formContainer {
       flex: 0 0 100%;
   }
-  .left-text {
+  .leftText {
       order: 1;
   }
-  .form-container {
+  .formContainer {
       order: 2;
   }
 }
@@ -71,7 +60,7 @@ html,body {
 
 }
 
-#input-fname, #input-lname {
+#inputFname, #inputLname {
   display: inline ;
 }
 
@@ -84,7 +73,7 @@ html,body {
   right: 354px;
 }
 
-#input-lname {
+#inputLname {
   position: fixed;
   margin-top: 289px;
   margin-left: 434px;
@@ -127,7 +116,7 @@ html,body {
   transition: ease border 0.1s;
 }
 
-#password-eye {
+#passwordEye {
   position:absolute;
   right: 90px;
   top: 579px;
@@ -136,7 +125,7 @@ html,body {
   cursor: pointer;
 }
 
-#password-eye:hover {
+#passwordEye:hover {
   top: 577px;
   right: 88px;
   height:54px;
@@ -145,7 +134,7 @@ html,body {
   transition: all 0.2s;
 }
 
-.div-btn-signup {
+.divBtnSignup {
   text-align: center;
   align-items: center;
   margin-top: 100px;
@@ -153,7 +142,7 @@ html,body {
   font-size: 20px;
 }
 
-.btn-signup {
+.btnSignup {
   margin-top: 0px;
   background-color: rgb(217, 229, 43);
   box-shadow: 10px 0px 30px rgb(36, 15, 48);
@@ -167,21 +156,22 @@ html,body {
   font-size: 25px;
 }
 
-.btn-signup:hover {
+.btnSignup:hover {
   width: 100%;
   transition: all 0.15s ease;
 }
 
-.btn-signup:focus {
+.btnSignup:focus {
   color: white;
   background-color: rgba(176, 110, 251, 0.593);
   outline: none;
 }
 
-.sign-up-link {
+.signUpLink {
   color : #b1bb27;
 }
 
-.sign-up-link:hover {
+.signUpLink:hover {
   color : #b1bb27;
 }
+
